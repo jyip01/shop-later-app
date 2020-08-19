@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import CircleButton from '../CircleButton/CircleButton'
+import ShopButton from '../ShopButton/ShopButton'
 import ApiContext from '../ApiContext'
 import { countListsForFolder } from '../lists-helpers'
 import './ShopListNav.css'
@@ -29,7 +29,7 @@ export default class SHopListNav extends React.Component {
           )}
         </ul>
         <div className='ShopListNav__button-wrapper'>
-          <CircleButton
+          <ShopButton
             tag={Link}
             to='/add-folder'
             type='button'
@@ -38,7 +38,7 @@ export default class SHopListNav extends React.Component {
             <FontAwesomeIcon icon='plus' />
             <br />
             Folder
-          </CircleButton>
+          </ShopButton>
         </div>
       </div>
     )

@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddList component renders the complete form 1`] = `
+<section
+  className="AddList"
+>
+  <h2>
+    Create a list
+  </h2>
+  <ShopLaterForm
+    onSubmit={[Function]}
+  >
+    <div
+      className="field"
+    >
+      <label
+        htmlFor="list-name-input"
+      >
+        Name
+      </label>
+      <input
+        id="list-name-input"
+        name="list-name"
+        type="text"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor="list-content-input"
+      >
+        Content
+      </label>
+      <textarea
+        id="list-content-input"
+        name="list-content"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor="list-folder-select"
+      >
+        Folder
+      </label>
+      <select
+        id="list-folder-select"
+        name="list-folder-id"
+      >
+        <option
+          value={null}
+        >
+          ...
+        </option>
+      </select>
+    </div>
+    <div
+      className="buttons"
+    >
+      <button
+        type="submit"
+      >
+        Add list
+      </button>
+    </div>
+  </ShopLaterForm>
+</section>
+`;

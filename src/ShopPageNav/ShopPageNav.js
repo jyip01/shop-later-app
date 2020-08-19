@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import CircleButton from '../CircleButton/CircleButton'
+import ShopButton from '../ShopButton/ShopButton'
 import ApiContext from '../ApiContext'
 import { findList, findFolder } from '../lists-helpers'
 import './ShopPageNav.css'
@@ -23,7 +23,7 @@ export default class ShopPageNav extends React.Component {
     const folder = findFolder(folders, list.folderId)
     return (
       <div className='ShopPageNav'>
-        <CircleButton
+        <ShopButton
           tag='button'
           role='link'
           onClick={() => this.props.history.goBack()}
@@ -32,7 +32,7 @@ export default class ShopPageNav extends React.Component {
           <FontAwesomeIcon icon='chevron-left' />
           <br />
           Back
-        </CircleButton>
+        </ShopButton>
         {folder && (
           <h3 className='ShopPageNav__folder-name'>
             {folder.name}

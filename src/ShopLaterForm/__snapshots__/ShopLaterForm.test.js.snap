@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShopLaterForm component renders a form.ShopLaterForm by default 1`] = `
+<form
+  action="#"
+  className="ShopLater-form "
+/>
+`;
+
+exports[`ShopLaterForm component renders the ShopLaterForm given props 1`] = `
+<form
+  action="#"
+  className="ShopLater-form test-class-name"
+  data-other="test-other-prop"
+>
+  <p>
+    test children
+  </p>
+</form>
+`;
