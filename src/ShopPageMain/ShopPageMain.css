@@ -1,3 +1,4 @@
+@media all and (min-width: 480px) {  
 .ShopPageMain {
     background-color: #efefef;
     height: 100%;
@@ -9,4 +10,4 @@
     color: #3a3939;
     max-width: 380px;
   }
-  
+} 

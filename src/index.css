@@ -7,7 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media all and (min-width: 480px) {  
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
 }

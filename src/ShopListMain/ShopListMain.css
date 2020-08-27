@@ -1,4 +1,5 @@
-.ShopListMain ul {
+@media all and (min-width: 480px) {  
+  .ShopListMain ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;
@@ -16,4 +17,4 @@
     background-color: gray;
     color: white;
   }
-  
+} 

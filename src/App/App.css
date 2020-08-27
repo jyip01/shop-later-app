@@ -1,17 +1,23 @@
-
 .App {
     --custom-font: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
     display: grid;
     grid-template-areas: "sidebar header" "sidebar main";
-    grid-template-columns: 300px 2.3fr;
-    grid-template-rows: 120px 1fr;
+    grid-template-columns: 200px 2.3fr;
+    grid-template-rows: 100px 1fr;
     min-height: 100vh;
   }
-  
+  @media all and (min-width: 480px) {
   .App__nav {
-    background-color: #ebbaf2e3;
+    background-image: url('list2.jpeg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     border-right: 4px dotted whitesmoke;
     color: white;
     grid-area: sidebar;
@@ -20,7 +26,14 @@
   }
   
   .App__header {
-    background-color: #e3acebe3;
+    background-image: url('list2.jpeg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: cornflowerblue;
     font-family: var(--custom-font);
     grid-area: header;
@@ -35,9 +48,19 @@
   }
   
   .App__main {
-    background-color: lightgray;
-    grid-area: main;
-    height: calc(100vh - 120px);
-    overflow: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url('list2.jpeg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  grid-area: main;
+  height: calc(100vh - 100px);
+  overflow: auto;
   }
-  
+}
